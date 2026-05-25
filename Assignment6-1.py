@@ -18,7 +18,7 @@ def weather_data(city):
         print("Humidity:", data["main"]["humidity"], "%")
         print("Pressure:", data["main"]["pressure"], "hPa")
 
-        print("Wind Speed:", data["wind"]["speed"], "m/s")
+        print("Wind Speed:", data["wind"])
 
     except requests.exceptions.RequestException as e:
         print("Error:", e)
